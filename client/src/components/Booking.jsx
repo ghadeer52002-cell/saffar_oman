@@ -35,7 +35,7 @@ function Booking() {
       return;
     }
 
-    fetch('http://localhost:3002/api/sites')
+    fetch('http://https://saffar-oman.onrender.com/api/sites')
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
