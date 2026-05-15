@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const baseUrl = 'http://localhost:3002';
+const baseUrl = 'https://saffar-oman.onrender.com';
 
 export const login = createAsyncThunk(
   'user/login',
