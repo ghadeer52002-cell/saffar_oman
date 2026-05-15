@@ -7,7 +7,7 @@ function Attractions() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:3002/api/sites')
+    fetch('https://saffar-oman.onrender.com/api/sites')
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
