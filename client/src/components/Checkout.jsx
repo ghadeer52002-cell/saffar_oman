@@ -27,7 +27,7 @@ function Checkout() {
 
     try {
       const response = await fetch(
-        `http://localhost:3002/api/bookings/confirm/${booking._id}`,
+        `https://saffar-oman.onrender.com/api/bookings/confirm/${booking._id}`,
         {
           method: 'PUT',
           headers: {
