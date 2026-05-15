@@ -6,7 +6,7 @@ function AdminDashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:3002/api/admin/dashboard')
+    fetch('https://saffar-oman.onrender.com/api/admin/dashboard')
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
