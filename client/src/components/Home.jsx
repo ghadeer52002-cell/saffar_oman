@@ -14,7 +14,7 @@ function Home() {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3002/api/reviews/public')
+    fetch('https://saffar-oman.onrender.com/api/reviews/public')
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
