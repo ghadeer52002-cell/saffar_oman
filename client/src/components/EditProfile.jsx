@@ -77,7 +77,7 @@ function EditProfile() {
     }
 
     try {
-      const response = await fetch(`http://localhost:3002/api/profile/${user._id}`, {
+      const response = await fetch(`https://saffar-oman.onrender.com/api/profile/${user._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -123,7 +123,7 @@ function EditProfile() {
     }
 
     try {
-      const response = await fetch('http://localhost:3002/api/reviews/add', {
+      const response = await fetch('https://saffar-oman.onrender.com/api/reviews/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
