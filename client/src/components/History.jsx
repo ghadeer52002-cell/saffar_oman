@@ -15,7 +15,7 @@ function History() {
       return;
     }
 
-    fetch(`http://localhost:3002/api/bookings/history/${user._id}`)
+    fetch(`https://saffar-oman.onrender.com/api/bookings/history/${user._id}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
