@@ -13,7 +13,7 @@ function ManageReviews() {
   });
 
   const loadReviews = () => {
-    fetch('http://localhost:3002/api/admin/reviews')
+    fetch('https://saffar-oman.onrender.com/api/admin/reviews')
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
@@ -50,7 +50,7 @@ function ManageReviews() {
   };
 
   const updateReview = async (id) => {
-    await fetch(`http://localhost:3002/api/admin/reviews/${id}`, {
+    await fetch(`https://saffar-oman.onrender.com/api/admin/reviews/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ function ManageReviews() {
   };
 
   const saveReply = async (id) => {
-    await fetch(`http://localhost:3002/api/admin/reviews/${id}/reply`, {
+    await fetch(`https://saffar-oman.onrender.com/api/admin/reviews/${id}/reply`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ function ManageReviews() {
   };
 
   const deleteReview = async (id) => {
-    await fetch(`http://localhost:3002/api/admin/reviews/${id}`, {
+    await fetch(`https://saffar-oman.onrender.com/api/admin/reviews/${id}`, {
       method: 'DELETE',
     });
 
