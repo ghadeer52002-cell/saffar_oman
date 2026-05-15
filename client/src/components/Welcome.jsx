@@ -10,7 +10,7 @@ function Welcome() {
         </div>
 
         <div className="welcome-copy">
-          <p className="eyebrow">Discover the soul of</p>
+          <p className="eyebrow">Discover with us the soul of</p>
           <h1>Oman</h1>
           <p className="subtitle">Your guide to unforgettable adventures</p>
         </div>
