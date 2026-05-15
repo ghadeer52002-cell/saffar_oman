@@ -28,7 +28,7 @@ function Attractions() {
 
   const handleBooking = async (site) => {
     try {
-      await fetch(`http://localhost:3002/api/sites/${site._id}/click`, {
+      await fetch(`https://saffar-oman.onrender.com/api/sites/${site._id}/click`, {
         method: 'PUT',
       });
     } catch (error) {
