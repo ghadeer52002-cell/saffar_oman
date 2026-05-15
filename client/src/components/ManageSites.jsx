@@ -16,7 +16,7 @@ function ManageSites() {
   });
 
   const loadSites = () => {
-    fetch('http://localhost:3002/api/sites')
+    fetch('https://saffar-oman.onrender.com/api/sites')
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
@@ -61,7 +61,7 @@ function ManageSites() {
     }
 
     if (editingId) {
-      await fetch(`http://localhost:3002/api/sites/${editingId}`, {
+      await fetch(`https://saffar-oman.onrender.com/api/sites/${editingId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ function ManageSites() {
         body: JSON.stringify(form),
       });
     } else {
-      await fetch('http://localhost:3002/api/sites/add', {
+      await fetch('https://saffar-oman.onrender.com/api/sites/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ function ManageSites() {
   };
 
   const deleteSite = async (id) => {
-    await fetch(`http://localhost:3002/api/sites/${id}`, {
+    await fetch(`https://saffar-oman.onrender.com/api/sites/${id}`, {
       method: 'DELETE',
     });
 
