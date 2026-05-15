@@ -125,7 +125,7 @@ function Booking() {
     }
 
     try {
-      const response = await fetch('http://localhost:3002/api/bookings/add', {
+      const response = await fetch('https://saffar-oman.onrender.com/api/bookings/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
