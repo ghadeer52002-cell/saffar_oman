@@ -19,7 +19,7 @@ function ManageUsers() {
 
   const loadUsers = () => {
 
-    fetch('http://localhost:3002/api/users')
+    fetch('https://saffar-oman.onrender.com/api/users')
 
       .then((response) => response.json())
 
@@ -83,7 +83,7 @@ function ManageUsers() {
 
     if (editingId) {
 
-      await fetch(`http://localhost:3002/api/users/${editingId}`, {
+      await fetch(`https://saffar-oman.onrender.com/api/users/${editingId}`, {
 
         method: 'PUT',
 
@@ -97,7 +97,7 @@ function ManageUsers() {
 
     } else {
 
-      await fetch('http://localhost:3002/api/users/add', {
+      await fetch('https://saffar-oman.onrender.com/api/users/add', {
 
         method: 'POST',
 
@@ -119,7 +119,7 @@ function ManageUsers() {
 
   const deleteUser = async (id) => {
 
-    await fetch(`http://localhost:3002/api/users/${id}`, {
+    await fetch(`https://saffar-oman.onrender.com/api/users/${id}`, {
 
       method: 'DELETE',
 
