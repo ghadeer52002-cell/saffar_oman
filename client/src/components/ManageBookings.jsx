@@ -23,19 +23,19 @@ function ManageBookings() {
   const total = pricePerDay * Number(form.days || 1);
 
   const loadData = () => {
-    fetch('http://localhost:3002/api/admin/bookings')
+    fetch('https://saffar-oman.onrender.com/api/admin/bookings')
       .then((res) => res.json())
       .then((data) => {
         if (data.success) setBookings(data.bookings);
       });
 
-    fetch('http://localhost:3002/api/users')
+    fetch('https://saffar-oman.onrender.com/api/users')
       .then((res) => res.json())
       .then((data) => {
         if (data.success) setUsers(data.users);
       });
 
-    fetch('http://localhost:3002/api/sites')
+    fetch('https://saffar-oman.onrender.com/api/sites')
       .then((res) => res.json())
       .then((data) => {
         if (data.success) setSites(data.sites);
@@ -78,8 +78,8 @@ function ManageBookings() {
     }
 
     const url = editingId
-      ? `http://localhost:3002/api/admin/bookings/${editingId}`
-      : 'http://localhost:3002/api/admin/bookings/add';
+      ? `https://saffar-oman.onrender.com/api/admin/bookings/${editingId}`
+      : 'https://saffar-oman.onrender.com/api/admin/bookings/add';
 
     const method = editingId ? 'PUT' : 'POST';
 
@@ -96,7 +96,7 @@ function ManageBookings() {
   };
 
   const deleteBooking = async (id) => {
-    await fetch(`http://localhost:3002/api/admin/bookings/${id}`, {
+    await fetch(`https://saffar-oman.onrender.com/api/admin/bookings/${id}`, {
       method: 'DELETE',
     });
 
